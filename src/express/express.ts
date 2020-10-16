@@ -22,11 +22,4 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Hello, World!");
 });
 
-app.use("/graphql", (req: Request, res: Response, next: NextFunction) => {
-  if (req.body.query) {
-    console.log(req.body.query);
-  }
-  next();
-});
-
 export default app;
