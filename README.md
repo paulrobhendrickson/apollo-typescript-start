@@ -1,1 +1,1 @@
-# graphQL-SPARQL-server
+# apollo-typescript-start
