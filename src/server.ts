@@ -7,5 +7,5 @@ const server = new ApolloServer({ schema });
 const port = process.env.PORT || 4000;
 
 server.listen({ port }, () =>
-  console.log("Now browse to http://localhost:" + port)
+  console.log("Now browse to http://localhost:" + port + server.graphqlPath)
 );
